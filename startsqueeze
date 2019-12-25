@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while true; do
+
+if ! pgrep -f squeezelite &> /dev/null 2>&1; then
+echo "not started"
+squeezelite -o hw:0 -n SqueezeWrt -z
+
+fi
+done
