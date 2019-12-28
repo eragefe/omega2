@@ -5,6 +5,7 @@ while true; do
 if ! pgrep -f squeezelite &> /dev/null 2>&1; then
 
 squeezelite -o hw:0 -n SqueezeWrt -z
+sleep 3
 
 fi
 done
